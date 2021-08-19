@@ -1,25 +1,197 @@
 @import "./helpers/normalize.scss";
-
-body {
-  background-color: #fffafa;
-  color: black;
+*{
+  box-sizing: border-box;
 }
 
-section {
-  max-width: 600px;
-  padding: 15px;
-  margin: 40px auto;
-  border: 2px solid rgb(21, 87, 211);
+.video-banner {
+  position: relative;
+  width: 100%;
+  background-color: #d9d9d9;
+  height: 754px;
+  overflow:hidden;
+  @media only screen and (max-width: 700px) {
+    height: 490px;
+  }
+}
+
+.video-banner__img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../img/video-head-foto.jpg);
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media only screen and (max-width: 700px) {
+    background-position: 46% center;
+    }
+}
+
+.video-banner__information{
+  position: absolute;
+  top: 210px;
+  right: 56%;
+  letter-spacing: .03em;
+  // outline: 1px solid #fff;
+  width: 580px;
+  @media only screen and (max-width: 1399px) {
+    right: 0px;
+    left: 0px;
+    margin: 0px auto;
+    top: 320px;
+    background-position: 100px center;
+  }
+    @media only screen and (max-width: 700px) {
+      width: 280px;
+      top: 229px;
+  }
+}
+
+.video-banner__text {
+  color: #fff;
+  font-size: 72px;
+  line-height: 100%;
+  @media only screen and (max-width: 700px) {
+    font-weight: 500;
+    font-size: 33.3382px;
+  }
+}
+
+.video-banner__subtext{
+  padding-left: 42%;
+  @media only screen and (max-width: 700px) {
+    padding-left: 34%; 
+  }
+}
+
+.video-banner__text__title {
   font-size: 18px;
-  background-color: #fdfdfd;
-  box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
-  @media screen and (max-width: 720px) {
+  line-height: 150%;
+  color: #fff;
+  width: 73%;
+  position: absolute;
+  right: 0px;
+  bottom: 80px;
+  // outline: 1px solid #f500ff;
+  @media only screen and (max-width: 700px) {
     font-size: 14px;
+    right: -25px;
   }
-  li {
-    margin: 150px 0px;
+}
+
+.video-banner__aroow{
+  width: 210px;
+  height: 210px;
+  // outline: 1px solid blue;
+  position: relative;
+  width: 100%;
+  @media only screen and (max-width: 700px) {
+    height: 180px;
   }
-  .text-center {
-    text-align: center;
+}
+
+.img-circle {
+  position: absolute;
+  top: -50px;
+  left: -70px;
+  animation: loader-1 20.1s infinite linear;
+  // outline:1px solid chartreuse;
+  @media only screen and (max-width: 700px) {
+    width: 80%;
+    top: -53px;
+    left: -96px;
+  }
+}
+  @keyframes loader-1
+  {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+
+.img-arrow{
+  position: absolute;
+  top: 60px;
+  left: 45px;
+  @media only screen and (max-width: 700px) {
+    top: 34px;
+    left: -1px;
+  }
+}
+
+// ВТОРАЯ СЕКЦИЯ
+.size-section{
+  margin: 50px auto 0;
+  padding: 0px 15px;
+  max-width: 1430px;
+  outline: 1px solid gold;
+}
+.flex-info{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 700px) {
+    flex-direction:column;
+  }
+}
+.flex-info-block{
+  width: 47%;
+  // min-width: 300px;
+  // height: 700px;
+  outline: 1px solid fuchsia;
+  margin-top: 80px;
+  @media only screen and (max-width: 700px) {
+    width: 100%;
+  }
+}
+.flex-info__top-text{
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 150%;
+  color: #333333;
+}
+.flex-info__short-desc{
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(51, 51, 51, 0.7); 
+  @media only screen and (max-width: 700px) {
+    margin-top: 15px;
+  }
+}
+.only-size{
+  width: 70%;
+}
+.flex-info-block__alt-text{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%; 
+}
+.flex-info-block__title-text{
+  font-size: 16px;
+  line-height: 150%;
+  margin: 20px 0px 30px;
+  width: 75%;
+}
+
+.pp{
+  width: 100px;
+  margin: 0px auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  order: 6;
+  @media only screen and (max-width: 700px) {
+    order: 4;
+  }
+}
+.pp-span{
+  margin: 0px;
+}
+.pp-img{
+  @media only screen and (max-width: 700px) {
+    order: 4;
+    transform: rotate(-90deg);
   }
 }

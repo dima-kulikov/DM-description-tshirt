@@ -12,41 +12,58 @@
   <section>
     <!-- @@include('html/header.html') -->
 
-    <img class="img" width="100%" src="/img/foto.jpg" alt="11" />
+    <div class="video-banner">
+      <div class="video-banner__img"></div>
+      <div class="video-banner__information">
+        <div class="video-banner__text">Дарим бонусы<br>
+          <span class="video-banner__subtext">за обзор</span>
+        </div>
+        <div class="video-banner__aroow">
+          <div class="video-banner__aroow__img">
+            <img class="img-circle" src="./img/ellipse.png" alt="1">
+            <img class="img-arrow" src="./img/arrow-down.png" alt="1">
+          </div>
+          <div class="video-banner__text__title">Автор каждого видеоролика, соответствующего условиям акции, получит бонусы на свой счет
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <h1 class="text-center">Gulp </h1>
-    <h2 class="text-center">Стартовая сборка для верстки</h2>
 
-    <p>1. Для работы открываем консоль и даем команду:</p>
-    <p> <strong>"npm i"</strong> (установка всех пакето в впроэкт)</p>
-    <p>2. Запуск галпа командой:</p>
-    <p><strong>"gulp"</strong></p>
+    <!-- ВТОРОЙ БЛОК С ВИДЕО ОБЗОРАМИ -->
+    <section class="size-section">
 
-    <p>Под капотом Gulp имеет:</p>
-    <ul>
-      <li>открытие страницы в браузере с html;</li>
-      <li>групировка html в один файл, через @@include путь к html, который
-        нужно вставить;</li>
-      <li>при ctrl+s сохранение данных и автоперезагрузка страницы;</li>
-      <li>scss;</li>
-      <li>обработка и перевод scss в стандартный css;</li>
-      <li>автопрефиксер;</li>
-      <li>групировка медиазапросов(находит все медиазапросы и групирует внизу
-        css);</li>
-      <li>"cleancss" сжимает css и создает файл min.css(в конечно йпапке css
-        файл и min.css);</li>
-      <li>сборка js файлов в один;</li>
-      <li>создание обычного js файла и min.js;</li>
-      <li>оптимизация изображений (уменьшает размер изображения на 40-50%);</li>
-      <li>создания (конвертирование) формата изображения WEBp;</li>
-      <li>webp html сразу в html подключает данный формат изображений;</li>
-      <li>webp в css, все изображения которые в css, ставит формат webp
-        (неработает, нужнапроверка!);</li>
-      <li>есть файл normalize, (подводит под один стандарт css настройки разных браузеров.);</li>
-    </ul>
-  </section>
+      <div class="flex-info">
+        <div style="order: 1;" class="flex-info-block flex-info__top-text">Необходимо снять видео на выбор</div>
+        <div style="order: 2;" class="flex-info-block flex-info__short-desc">
+          <div class="only-size">Для получения бонусов разрешается снимать один видеоролик об одном уникальном товаре
+          </div>
+        </div>
+        <div style="order: 3;" class="flex-info-block">
+          <div class="flex-info-block__alt-text">Распаковка</div>
+          <div class="flex-info-block__title-text">С распаковкой товара, подробно продемонстрировав упаковку, комплектацию и внешний вид товара без упаковки</div>
+          <!-- ----video -->
+          <img width="100%" src="./img/raspakovka-1.jpg" alt="">
+          <!-- -----end video -->
+        </div>
+        <div style="order: 5;" class="flex-info-block">
+          <div class="flex-info-block__alt-text">Обзор</div>
+          <div class="flex-info-block__title-text">Обзор товара, рассказав о применении инструмента, его характеристиках, показав инструмент в работе</div>
+          <!-- ----video -->
+          <img width="100%" src="./img/raspakovka-2.jpg" alt="1">
+          <!-- -----end video -->
+        </div>
 
-  <!-- <! <script src="js/script.min.js"></script>  -->
+
+        <div class="pp">
+          <span class="pp-span">или</span>
+          <img class="pp-img" src="./img/two-way-arrow.png" alt="1">
+        </div>
+      </div>
+      <!-- <div class="pp">или
+       
+      </div> -->
+    </section>
 </body>
 
 </html>
