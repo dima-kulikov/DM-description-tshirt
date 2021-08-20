@@ -442,6 +442,10 @@ th {
   padding: 0;
 }
 
+.number-bonuses-color {
+  background-color: #F5F5F5;
+}
+
 .slider {
   position: relative;
 }
