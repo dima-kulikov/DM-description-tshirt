@@ -1,37 +1,50 @@
 .in-scrolling {
     overflow:hidden;
-  /*   max-width:100%; */
+    @media only screen and (max-width: 1000px) {
+      overflow: auto;
+    }
   }
   
   .scrolling{
-    width:5560px;
-  /*   outline: 10px solid red; */
-    border:1px solid red;
+    width:4560px;
+    // border:1px solid red;
     display: flex;
     justify-content: start;
-  /*   overflow:hidden; */
+    @media only screen and (max-width: 1000px) {
+      width: 100%;
+      flex-wrap: wrap;
+    }
   }
   .scrolling__block{
   /*   width: 200px;
     height: 200px; */
-    outline: 1px solid blue;
+    // outline: 1px solid blue;
     margin: 10px 20px;
     display: flex;
     max-width: 900px;
     height: 600px;
     justify-content: space-between;
-    margin: 250px 0px 0px 150px;
-   
+    margin: 150px 0px 0px 150px;
+    @media only screen and (max-width: 1000px) {
+      margin: 50px auto;
+      flex-wrap: wrap;
+      height: auto;
+    }
   }
-  // .scrolling__block__img{
-    // width: 30%;
-  /*   max-width: 300px; */
-  // }
+   .scrolling__block__img{
+    @media only screen and (max-width: 1000px) {
+margin: 0px auto;
+    } 
+   }
   .scrolling__block__text{
     width: 47%;
-    border: 1px solid red;
+    // border: 1px solid red;
     justify-content: space-around;
     padding-top: 200px;
+    @media only screen and (max-width: 1000px) {
+      padding: 45px 15px 0px;
+      width: 100%;
+    }
   }
   .sc__block__alt{
     font-size: 24px;
@@ -44,6 +57,14 @@
   line-height: 150%;
     color: rgba(51, 51, 51, 0.7); 
   }
+  .img-size-1{
+    @media only screen and (max-width: 1000px) {
+      width: 40%;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 60%;
+    }
+  }
   .img-size-2{
     width: 42%;
     height: max-content;
@@ -52,25 +73,46 @@
     height: max-content;
     width: 42%;
     margin: 0px auto;
+    @media only screen and (max-width: 1000px) {
+      width: 60%;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 80%;
+    }
   }
   .img-size-4{
     height: max-content;
     width: 28%;
     margin: 0px auto;
+    @media only screen and (max-width: 1000px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 70%;
+    }
   }
 
-  .user-icon{
-    position: relative;
-    padding-left: 41px;
+.user-icon{
+  position: relative;
+  padding-left: 41px;
+}
+.user-icon::before {
+  content: '';
+  position: absolute;
+  width: 36px;
+  height: 25px;
+  background: url('/img/you-tube.png');
+  display: inline-block;
+  background-repeat: no-repeat;
+  top: 3px;
+  left: 0px;
+}
+.video-requirements__alt{
+  font-size: 36px;
+  line-height: 100%;
+  color: #333333;
+  padding-top: 100px;
+  @media only screen and (max-width: 768px) {
+    font-size: 24px; 
   }
-  .user-icon::before {
-    content: '';
-    position: absolute;
-    width: 36px;
-    height: 25px;
-    background: url('/img/you-tube.png');
-    display: inline-block;
-    background-repeat: no-repeat;
-    top: 3px;
-    left: 0px;
-  }
+}
