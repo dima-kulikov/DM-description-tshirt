@@ -1028,16 +1028,17 @@ th {
 }
 
 .dl-payment-return-padding {
-  padding: 25px 0 25px 24px;
+  padding: 30px 0 20px 35px;
 }
 
 .dl-info-tabs-item__title-name {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0px 25px 0px 15px;
   letter-spacing: .04em;
-  line-height: 27px;
+  line-height: 30px;
+  color: #333333;
 }
 
 .dl-info-tabs-item {
@@ -1057,7 +1058,7 @@ th {
 
 .dl-info-tabs-item__content p {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   color: #909090;
   margin: 30px 0px;
 }
@@ -1072,6 +1073,16 @@ th {
 
 .content-b-color {
   color: #333333;
+}
+
+.table th {
+  background: #E7E7E7;
+  font-size: 16px;
+}
+
+.table td {
+  border-bottom: 1px solid rgba(144, 144, 144, 0.3);
+  /*   font-size: 50px; */
 }
 
 * {
