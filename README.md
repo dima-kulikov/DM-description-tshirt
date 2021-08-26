@@ -1,3 +1,7 @@
+https://dima-kulikov.github.io/DM-bonuses-for-video-reviews/dist/index.html
+
+https://dima-kulikov.github.io//DM-bonuses-for-video-reviews/
+
 <img class="img" width="100%" src="gulp.png" alt="11" />
 
 <!-- ![Banner](./gulp.png) -->
