@@ -88,14 +88,14 @@
     top: 23%;
     width: 24%;
     background-repeat: no-repeat;
-    background-image: url('/img/publishing-2.png');
+    background-image: url('../img/publishing-2.png');
     @media only screen and (max-width: 1000px) {
         top: 63%;
         width: 37%;
         right: -10%;
     }
     @media only screen and (max-width: 600px) {
-        background-image: url('/img/publishing-mob-2.png');
+        background-image: url('../img/publishing-mob-2.png');
         top: 63%;
         width: 150px;
         right: auto;

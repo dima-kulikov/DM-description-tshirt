@@ -540,11 +540,11 @@ th {
 }
 
 .slider__control[data-slide="prev"]::before {
-  background-image: url("/img/left-arrow.png");
+  background-image: url("../img/left-arrow.png");
 }
 
 .slider__control[data-slide="next"]::before {
-  background-image: url("/img/right-arrow.png");
+  background-image: url("../img/right-arrow.png");
 }
 
 .slider__indicators {
@@ -915,7 +915,7 @@ th {
   top: 23%;
   width: 24%;
   background-repeat: no-repeat;
-  background-image: url("/img/publishing-2.png");
+  background-image: url("../img/publishing-2.png");
 }
 
 .publishing__vector {
@@ -1689,7 +1689,7 @@ body {
   }
 
   .publishing__img-2 {
-    background-image: url("/img/publishing-mob-2.png");
+    background-image: url("../img/publishing-mob-2.png");
     top: 63%;
     width: 150px;
     right: auto;

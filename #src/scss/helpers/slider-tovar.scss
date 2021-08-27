@@ -84,10 +84,10 @@
     background-size: 100% 100%;
   }
   .slider__control[data-slide="prev"]::before {
-    background-image: url("/img/left-arrow.png");
+    background-image: url("../img/left-arrow.png");
   }
   .slider__control[data-slide="next"]::before {
-    background-image: url("/img/right-arrow.png");
+    background-image: url("../img/right-arrow.png");
   }
   .slider__indicators {
     position: absolute;
