@@ -4,6 +4,14 @@
 @import "./helpers/video-publishing.scss";
 @import "./helpers/rules.scss";
 
+@font-face {
+  font-family: Proxima Nova Regular;
+  src: url("../fonts/Cera PRO.otf") format("opentype");
+  }
+  body {
+      font-family: Cera PRO;
+  }
+
 *{
   box-sizing: border-box;
 }
@@ -98,8 +106,8 @@
 
 .img-circle {
   position: absolute;
-  top: -50px;
-  left: -70px;
+  top: -30px;
+  left: -50px;
   animation: loader-1 20.1s infinite linear;
   // outline:1px solid chartreuse;
   @media only screen and (max-width: 700px) {
@@ -129,27 +137,31 @@
   margin: 0px auto;
   padding: 0px 15px;
   max-width: 1430px;
-  outline: 1px solid gold;
+  // outline: 1px solid gold;
 }
 .flex-info{
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 130px;
   @media only screen and (max-width: 700px) {
     flex-direction:column;
+    margin-bottom: 0px;
   }
 }
 .flex-info-block{
   width: 47%;
-  // min-width: 300px;
-  // height: 700px;
-  // outline: 1px solid rgb(12, 12, 12);
   margin-top: 85px;
   @media only screen and (max-width: 700px) {
     width: 100%;
     position: relative;
     margin-top: 50px;
+  }
+}
+.indent-down{
+  @media only screen and (max-width: 700px) {
+  margin-bottom: 40px;
   }
 }
 .flex-info__top-text{

@@ -1,97 +1,100 @@
 .in-scrolling {
-    overflow:hidden;
-    @media only screen and (max-width: 1000px) {
-      overflow: auto;
-    }
+  overflow:hidden;
+  @media only screen and (max-width: 1000px) {
+    overflow: auto;
   }
+}
   
-  .scrolling{
-    width:4560px;
-    // border:1px solid red;
-    display: flex;
-    justify-content: start;
-    @media only screen and (max-width: 1000px) {
-      width: 100%;
-      flex-wrap: wrap;
-    }
+.scrolling{
+  width:5560px;
+  display: flex;
+  justify-content: start;
+  @media only screen and (max-width: 1360px) {
+    width:4260px;
   }
-  .scrolling__block{
-  /*   width: 200px;
-    height: 200px; */
-    // outline: 1px solid blue;
-    margin: 10px 20px;
-    display: flex;
-    max-width: 900px;
-    height: 600px;
-    justify-content: space-between;
-    margin: 150px 0px 0px 150px;
-    @media only screen and (max-width: 1000px) {
-      margin: 50px auto;
-      flex-wrap: wrap;
-      height: auto;
-    }
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+    flex-wrap: wrap;
   }
-   .scrolling__block__img{
-    @media only screen and (max-width: 1000px) {
-margin: 0px auto;
-    } 
-   }
-  .scrolling__block__text{
-    width: 47%;
-    // border: 1px solid red;
-    justify-content: space-around;
-    padding-top: 200px;
-    @media only screen and (max-width: 1000px) {
-      padding: 45px 15px 0px;
-      width: 100%;
-    }
+}
+.scrolling__block{
+  margin: 10px 20px;
+  display: flex;
+  max-width: 900px;
+  height: 600px;
+  justify-content: space-between;
+  margin: 150px 0px 0px 400px;
+  @media only screen and (max-width: 1360px) {
+    margin: 150px 0px 0px 100px;
   }
-  .sc__block__alt{
-    font-size: 24px;
+  @media only screen and (max-width: 1000px) {
+    margin: 50px auto;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+.scrolling__block__img{
+  @media only screen and (max-width: 1000px) {
+    margin: 0px auto;
+  } 
+}
+.scrolling__block__text{
+  width: 47%;
+  justify-content: space-around;
+  padding-top: 200px;
+  @media only screen and (max-width: 1000px) {
+    padding: 45px 15px 0px;
+    width: 100%;
+  }
+}
+.sc__block__alt{
+  font-size: 24px;
   line-height: 150%;
   color: #333333;
-    margin-bottom: 40px;
-  }
-  .sc__block__title{
+  margin-bottom: 40px;
+}
+.sc__block__title{
   font-size: 16px;
   line-height: 150%;
-    color: rgba(51, 51, 51, 0.7); 
+  color: rgba(51, 51, 51, 0.7); 
+}
+.img-size-1{
+  @media only screen and (max-width: 1000px) {
+    width: 40%;
   }
-  .img-size-1{
-    @media only screen and (max-width: 1000px) {
-      width: 40%;
-    }
-    @media only screen and (max-width: 768px) {
-      width: 60%;
-    }
+  @media only screen and (max-width: 768px) {
+    width: 60%;
   }
-  .img-size-2{
-    width: 42%;
-    height: max-content;
+}
+.img-size-2{
+  width: 42%;
+  height: max-content;
+  @media only screen and (max-width: 768px) {
+    width: 80%;
   }
-  .img-size-3{
-    height: max-content;
-    width: 42%;
-    margin: 0px auto;
-    @media only screen and (max-width: 1000px) {
-      width: 60%;
-    }
-    @media only screen and (max-width: 768px) {
-      width: 80%;
-    }
+}
+.img-size-3{
+  height: max-content;
+  width: 42%;
+  margin: 0px auto;
+  @media only screen and (max-width: 1000px) {
+    width: 60%;
   }
-  .img-size-4{
-    height: max-content;
-    width: 28%;
-    margin: 0px auto;
-    @media only screen and (max-width: 1000px) {
-      width: 50%;
-    }
-    @media only screen and (max-width: 768px) {
-      width: 70%;
-    }
+  @media only screen and (max-width: 768px) {
+    width: 80%;
   }
-
+}
+.img-size-4{
+  height: max-content;
+  width: 28%;
+  margin: 0px auto;
+  @media only screen and (max-width: 1000px) {
+    width: 50%;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 70%;
+  }
+}
 .user-icon{
   position: relative;
   padding-left: 41px;
