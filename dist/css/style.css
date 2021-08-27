@@ -905,7 +905,7 @@ th {
   top: 30%;
   width: 40%;
   background-repeat: no-repeat;
-  background-image: url("/img/publishing-1.png");
+  background-image: url("../img/publishing-1.png");
 }
 
 .publishing__img-2 {
@@ -1680,7 +1680,7 @@ body {
   }
 
   .publishing__img {
-    background-image: url("/img/publishing-mob-1.png");
+    background-image: url("../img/publishing-mob-1.png");
     top: auto;
     width: 175px;
     right: 42%;
