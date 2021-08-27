@@ -845,6 +845,7 @@ th {
   line-height: 100%;
   color: #333333;
   padding-top: 100px;
+  padding-left: 11.5vw;
 }
 
 .size-section__big {
@@ -1033,7 +1034,6 @@ th {
 .dl-info-tabs-item__title-name {
   font-size: 20px;
   font-weight: 500;
-  text-transform: uppercase;
   margin: 0px 25px 0px 15px;
   letter-spacing: .04em;
   line-height: 30px;
@@ -1538,6 +1538,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .sc__block__alt {
+    font-size: 18px;
+  }
+
   .img-size-1 {
     width: 60%;
   }
@@ -1556,6 +1560,7 @@ body {
 
   .video-requirements__alt {
     font-size: 24px;
+    padding-left: 15px;
   }
 
   .dl-grid-block-alt {
