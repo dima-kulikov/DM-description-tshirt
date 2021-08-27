@@ -833,7 +833,7 @@ th {
   position: absolute;
   width: 36px;
   height: 25px;
-  background: url("/img/you-tube.png");
+  background: url("../img/you-tube.png");
   display: inline-block;
   background-repeat: no-repeat;
   top: 3px;
