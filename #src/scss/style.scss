@@ -3,11 +3,16 @@
 @import "./helpers/video-requirements.scss";
 @import "./helpers/video-publishing.scss";
 @import "./helpers/rules.scss";
+@import "./helpers/slick-slider.scss";
 
 @font-face {
-  font-family: Proxima Nova Regular;
-  src: url("../fonts/Cera PRO.otf") format("opentype");
+  font-family: Cera Pro;
+  src: url("../fonts/CeraPRO.otf") format("opentype");
   }
+  @font-face {
+    font-family: Cera PRO Medium;
+    src: url("../fonts/Cera+PRO+Medium.otf") format("opentype");
+    }
   body {
       font-family: Cera PRO;
   }
@@ -201,7 +206,7 @@
 
 .block-arrow{
   width: 100px;
-  margin: 0px auto;
+  margin: 10px auto 0px;
   text-align: center;
   font-weight: 500;
   font-size: 18px;
