@@ -50,7 +50,7 @@
   position: absolute;
   top: 210px;
   right: 56%;
-  letter-spacing: .03em;
+  // letter-spacing: .03em;
   // outline: 1px solid #fff;
   width: 580px;
   @media only screen and (max-width: 1399px) {
@@ -87,14 +87,15 @@
   font-size: 18px;
   line-height: 150%;
   color: #fff;
-  width: 73%;
+  width: 74%;
   position: absolute;
   right: 0px;
-  bottom: 80px;
+  bottom: 100px;
   // outline: 1px solid #f500ff;
   @media only screen and (max-width: 700px) {
     font-size: 14px;
     right: -25px;
+    top: 15px;
   }
 }
 
@@ -111,14 +112,19 @@
 
 .img-circle {
   position: absolute;
-  top: -30px;
-  left: -50px;
+  top: -51px;
+  left: -58px;
   animation: loader-1 20.1s infinite linear;
   // outline:1px solid chartreuse;
   @media only screen and (max-width: 700px) {
     width: 80%;
     top: -53px;
     left: -96px;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 60%;
+    top: -40px;
+    left: -58px;
   }
 }
   @keyframes loader-1
@@ -129,13 +135,19 @@
 
 .img-arrow{
   position: absolute;
-  top: 60px;
-  left: 45px;
+  top: 39px;
+  left: 37px;
   @media only screen and (max-width: 700px) {
     top: 34px;
     left: -1px;
   }
+  @media only screen and (max-width: 500px) {
+    top: 26px;
+    left: 12px;
+    width: 9%;
+  }
 }
+
 
 // ВТОРАЯ СЕКЦИЯ
 .size-section{
@@ -185,8 +197,10 @@
 }
 .only-size{
   width: 70%;
+  padding-top: 15px;
   @media only screen and (max-width: 700px) {
     width: 100%;
+    padding-top: 0px;
   }
 }
 .flex-info-block__alt-text{

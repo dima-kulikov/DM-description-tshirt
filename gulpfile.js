@@ -21,6 +21,7 @@ let path={
     css: sourse_folder + "/scss/**/*.scss",
     js: sourse_folder + "/js/**/*.js",
     img: sourse_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+    fonts: sourse_folder + "/fonts/*.{ttf, otf}",
   },
   clean: "./" + project_folder + "/"
 }
@@ -128,6 +129,11 @@ function images() {
   .pipe(browsersync.stream())
 }
 
+function fonts() {
+  return gulp.src('#src/fonts/**/*')
+    .pipe(gulp.dest('dist/fonts'))
+}
+
 gulp.task('svgSprite', function(){
   return gulp.src([sourse_folder + '/iconsprite/*.svg'])
   .pipe(svgSprite({
@@ -146,6 +152,7 @@ gulp.watch([path.watch.html], html);
 gulp.watch([path.watch.css], css);
 gulp.watch([path.watch.js], js);
 gulp.watch([path.watch.img], images);
+gulp.watch([path.watch.fonts], fonts);
 }
 
 function clean(params){
@@ -153,7 +160,7 @@ function clean(params){
 }
 
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.images = images;
@@ -163,3 +170,4 @@ exports.html = html;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+exports.fonts = fonts;

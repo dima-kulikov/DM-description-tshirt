@@ -1166,7 +1166,6 @@ body {
   position: absolute;
   top: 210px;
   right: 56%;
-  letter-spacing: .03em;
   width: 580px;
 }
 
@@ -1184,10 +1183,10 @@ body {
   font-size: 18px;
   line-height: 150%;
   color: #fff;
-  width: 73%;
+  width: 74%;
   position: absolute;
   right: 0px;
-  bottom: 80px;
+  bottom: 100px;
 }
 
 .video-banner__aroow {
@@ -1199,8 +1198,8 @@ body {
 
 .img-circle {
   position: absolute;
-  top: -30px;
-  left: -50px;
+  top: -51px;
+  left: -58px;
   -webkit-animation: loader-1 20.1s infinite linear;
           animation: loader-1 20.1s infinite linear;
 }
@@ -1231,8 +1230,8 @@ body {
 
 .img-arrow {
   position: absolute;
-  top: 60px;
-  left: 45px;
+  top: 39px;
+  left: 37px;
 }
 
 .size-section {
@@ -1277,6 +1276,7 @@ body {
 
 .only-size {
   width: 70%;
+  padding-top: 15px;
 }
 
 .flex-info-block__alt-text {
@@ -1600,6 +1600,7 @@ body {
   .video-banner__text__title {
     font-size: 14px;
     right: -25px;
+    top: 15px;
   }
 
   .video-banner__aroow {
@@ -1641,6 +1642,7 @@ body {
 
   .only-size {
     width: 100%;
+    padding-top: 0px;
   }
 
   .flex-info-block__title-text {
@@ -1720,5 +1722,19 @@ body {
 @media only screen and (max-width: 540px) {
   .slick-dotted.slick-slider {
     margin: 0px -7% 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .img-circle {
+    width: 60%;
+    top: -40px;
+    left: -58px;
+  }
+
+  .img-arrow {
+    top: 26px;
+    left: 12px;
+    width: 9%;
   }
 }
