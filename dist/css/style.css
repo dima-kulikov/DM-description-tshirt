@@ -578,6 +578,10 @@ th {
   color: #FFFFFF;
 }
 
+.publishing__list {
+  margin-top: 50px;
+}
+
 .publishing__list__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,7 +610,7 @@ th {
   position: absolute;
   height: 503px;
   right: 184px;
-  top: 30%;
+  top: 27.5%;
   width: 40%;
   background-repeat: no-repeat;
   background-image: url("../img/publishing-1.png");
@@ -616,7 +620,7 @@ th {
   position: absolute;
   height: 665px;
   right: -77px;
-  top: 19%;
+  top: 16%;
   width: 24%;
   background-repeat: no-repeat;
   background-image: url("../img/publishing-2.png");
@@ -817,6 +821,11 @@ th {
   text-align: center;
   margin: 60px 0px 90px;
   cursor: pointer;
+}
+
+.btn__promotion-rules:hover {
+  background-color: #ff2f00;
+  color: #fff;
 }
 
 /* https://kenwheeler.github.io/slick/ */
@@ -1483,11 +1492,15 @@ body {
   .publishing__top-block {
     margin: 0px auto;
     padding-bottom: 60%;
-    padding-top: 85px;
+    padding-top: 45px;
   }
 
   .publishing__alt {
     font-size: 24px;
+  }
+
+  .publishing__list {
+    margin-top: 25px;
   }
 
   .publishing__img {
@@ -1508,6 +1521,10 @@ body {
             transform: rotate(71deg);
     bottom: auto;
     top: 52%;
+  }
+
+  .dl-info-tabs-item {
+    padding-left: 15px;
   }
 }
 
@@ -1655,7 +1672,7 @@ body {
 @media only screen and (max-width: 600px) {
   .publishing__top-block {
     padding-bottom: 450px;
-    padding-top: 85px;
+    padding-top: 45px;
   }
 
   .publishing__img {
@@ -1682,7 +1699,7 @@ body {
         -ms-transform: rotate(38deg);
             transform: rotate(38deg);
     bottom: auto;
-    top: 61%;
+    top: 58%;
   }
 
   .slider__content_title {
@@ -1691,5 +1708,11 @@ body {
 
   .slider__content_description {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .slick-dotted.slick-slider {
+    margin: 0px -7% 30px;
   }
 }

@@ -6,8 +6,8 @@ $(document).ready(function(){
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      // autoplay: true,
+      // autoplaySpeed: 3000,
       responsive: [
         {
           breakpoint: 1224,
@@ -16,13 +16,22 @@ $(document).ready(function(){
           }
         },
         {
-          breakpoint: 900,
+          breakpoint: 860,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 2.5,
+            arrows: false
           }
         },
         {
           breakpoint: 640,
+          settings: {
+            slidesToShow: 2,
+            arrows: false
+
+          }
+        },
+        {
+          breakpoint: 540,
           settings: {
             slidesToShow: 1.5,
             arrows: false

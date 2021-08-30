@@ -252,3 +252,8 @@
 .slick-next{
   right: -3.7%;
 }
+.slick-dotted.slick-slider{
+  @media only screen and (max-width: 540px) {
+  margin: 0px -7% 30px;
+  }
+}
