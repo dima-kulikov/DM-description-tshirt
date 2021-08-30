@@ -85,10 +85,15 @@
       height: auto;
       max-width: 95%;
       position: absolute;
+      transform: translate(1%, -3%);
       
     }
+  //   .slick-slide img {
+  //     display: block;
+  //     transform: translate(1%, -3%);
+  // }
     .img-position-1{
-      top: -260px;
+      top: -270px;
     }
     .img-position-2{
       top: -240px;

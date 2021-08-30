@@ -475,14 +475,14 @@ $(document).ready(function(){
           }
         },
         {
-          breakpoint: 860,
+          breakpoint: 880,
           settings: {
             slidesToShow: 2.5,
             arrows: false
           }
         },
         {
-          breakpoint: 640,
+          breakpoint: 680,
           settings: {
             slidesToShow: 2,
             arrows: false
@@ -490,7 +490,7 @@ $(document).ready(function(){
           }
         },
         {
-          breakpoint: 540,
+          breakpoint: 600,
           settings: {
             slidesToShow: 1.6,
             arrows: false
@@ -498,9 +498,17 @@ $(document).ready(function(){
           }
         },
         {
-          breakpoint: 400,
+          breakpoint: 500,
           settings: {
             slidesToShow: 1.4,
+            arrows: false
+
+          }
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1.3,
             arrows: false
 
           }
