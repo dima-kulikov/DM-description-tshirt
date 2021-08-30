@@ -471,7 +471,7 @@ $(document).ready(function(){
         {
           breakpoint: 1224,
           settings: {
-            slidesToShow: 3
+            slidesToShow: 3.5
           }
         },
         {
@@ -492,7 +492,15 @@ $(document).ready(function(){
         {
           breakpoint: 540,
           settings: {
-            slidesToShow: 1.5,
+            slidesToShow: 1.6,
+            arrows: false
+
+          }
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1.4,
             arrows: false
 
           }
