@@ -13,8 +13,8 @@
     max-width: 560px;
     // outline: 1px solid red;
     margin-left: 13%;
-    padding-top: 175px;
-    padding-bottom: 180px;
+    padding-top: 150px;
+    padding-bottom: 280px;
     @media only screen and (max-width: 1200px) {
         margin-left: 15px;
     }
@@ -40,7 +40,7 @@
 .publishing__list__block{
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .publishing__list__block__number{
     font-size: 48px;
@@ -82,10 +82,10 @@
 }
 .publishing__img-2{
     position: absolute;
-    height: 611px;
+    height: 665px;
     // outline: 1px solid rgb(0, 255, 170);
-    right: -96px;
-    top: 23%;
+    right: -77px;
+    top: 19%;
     width: 24%;
     background-repeat: no-repeat;
     background-image: url('../img/publishing-2.png');

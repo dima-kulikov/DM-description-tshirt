@@ -567,8 +567,8 @@ th {
 .publishing__top-block {
   max-width: 560px;
   margin-left: 13%;
-  padding-top: 175px;
-  padding-bottom: 180px;
+  padding-top: 150px;
+  padding-bottom: 280px;
 }
 
 .publishing__alt {
@@ -585,7 +585,7 @@ th {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .publishing__list__block__number {
@@ -614,9 +614,9 @@ th {
 
 .publishing__img-2 {
   position: absolute;
-  height: 611px;
-  right: -96px;
-  top: 23%;
+  height: 665px;
+  right: -77px;
+  top: 19%;
   width: 24%;
   background-repeat: no-repeat;
   background-image: url("../img/publishing-2.png");
@@ -749,7 +749,7 @@ th {
   -o-transition: .3s;
   transition: .3s;
   overflow: hidden;
-  padding-left: 40px;
+  padding-left: 35px;
   max-width: 830px;
 }
 
