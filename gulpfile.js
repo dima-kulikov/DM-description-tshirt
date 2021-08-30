@@ -14,7 +14,7 @@ let path={
     css: sourse_folder + "/scss/style.scss",
     js: sourse_folder + "/js/script.js",
     img: sourse_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-    fonts: sourse_folder + "/fonts/*.ttf",
+    fonts: sourse_folder + "/fonts/*.{ttf, otf}",
   },
   watch:{
     html: sourse_folder + "/**/*.html",
