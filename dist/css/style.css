@@ -693,32 +693,29 @@ th {
   border: 0;
 }
 
-.dl-section__open-btn::before {
-  content: "";
-  position: absolute;
-  background-color: #333;
-  cursor: pointer;
-  left: 0;
-  top: 9px;
-  height: 2px;
-  width: 20px;
-}
-
 .dl-section__open-btn::after {
   content: "";
   position: absolute;
-  background-color: #333;
   cursor: pointer;
   width: 2px;
-  height: 20px;
-  left: 9px;
+  height: 10px;
+  width: 15px;
+  background-image: url(../img/up-arrow.png);
   top: 0px;
 }
 
 .dl-section__open-btn__del-after::after {
   content: "";
-  width: 0px;
-  height: 0px;
+  position: absolute;
+  cursor: pointer;
+  width: 2px;
+  height: 10px;
+  width: 15px;
+  background-image: url(../img/up-arrow.png);
+  top: 0px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .dl-info-tabs-item__title {
@@ -826,6 +823,7 @@ th {
 .btn__promotion-rules:hover {
   background-color: #ff2f00;
   color: #fff;
+  border: 1px solid #ff2f00;
 }
 
 /* https://kenwheeler.github.io/slick/ */
@@ -1478,15 +1476,19 @@ body {
   }
 
   .img-size-1 {
-    width: 40%;
+    width: 35%;
+  }
+
+  .img-size-2 {
+    width: 50%;
   }
 
   .img-size-3 {
-    width: 60%;
+    width: 55%;
   }
 
   .img-size-4 {
-    width: 50%;
+    width: 45%;
   }
 
   .publishing__top-block {
