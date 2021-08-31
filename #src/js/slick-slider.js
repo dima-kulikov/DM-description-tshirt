@@ -12,7 +12,7 @@ $(document).ready(function(){
         {
           breakpoint: 1224,
           settings: {
-            slidesToShow: 3.5
+            slidesToShow: 3.5,
           }
         },
         {
@@ -20,6 +20,7 @@ $(document).ready(function(){
           settings: {
             slidesToShow: 2.5,
             arrows: false
+            
           }
         },
         {
