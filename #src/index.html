@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <div class="video-bonus"> 
   <section>
     <!-- @@include('html/header.html') -->
 
@@ -58,7 +59,7 @@
           <div class="flex-info-block__title-text">Обзор товара, рассказав о применении инструмента, его характеристиках, показав инструмент в работе</div>
           <div class="HoverVideo__wrapper">
             <div class="HoverVideo__videoBox">
-              <video class="video" loop preload="yes" muted>
+              <video id="video-id" class="video" loop preload="yes" muted>
                 <source src="https://static.dnipro-m.ua/origin/posts/landing/landing-page-bonus-for-video/obzor.mp4" type="video/mp4">
               </video>
             </div>
@@ -522,12 +523,14 @@
     </div>
 
   </section>
+</div>
   <footer style="height: 500px; background-color: blanchedalmond;"></footer>
 
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./js/script.js"></script>
+
 </body>
 
 </html>

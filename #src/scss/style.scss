@@ -4,6 +4,7 @@
 @import "./helpers/rules.scss";
 @import "./helpers/slick-slider.scss";
 
+
 @font-face {
   font-family: Cera Pro;
   src: url("../fonts/CeraPRO.otf") format("opentype");
@@ -19,6 +20,14 @@
 *{
   box-sizing: border-box;
 }
+
+
+.video-bonus{
+  // width: 100%;
+  // height: 100%;
+
+
+
 
 .video-banner {
   position: relative;
@@ -270,4 +279,5 @@
 
 .HoverVideo__videoBox .video::-webkit-media-controls{
  display: none !important;
+}
 }

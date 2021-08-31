@@ -1,8 +1,5 @@
-/* https://kenwheeler.github.io/slick/ */
 
-/* https://www.youtube.com/watch?v=rXNfDfqtM3M */
-/* видосик */
-
+.video-bonus{
 
 .your-class{
     width: 80%;
@@ -48,13 +45,9 @@
       transition: transform 0.5s ease;
       padding-bottom: 50px;
     }
-    // .slider_disable-transition {
-    //   transition: none;
-    // }
+
     .slider__item {
       flex: 0 0 100%;
-    //   max-width: 100%;
-    // max-width: 256px;
       user-select: none;
       margin: 100px 10px 20px;
     }
@@ -65,9 +58,7 @@
       @media only screen and (max-width: 1124px) {
         width: 95%;
       }
-    }
-    
-    
+    }  
     .slider__wrapper {
       overflow: hidden;
       margin-left: -5px;
@@ -96,34 +87,7 @@
     .slick-slide img {
       bottom: -1700%;
   }
-    // .img-position-1{
-    //   top: -270px;
-    // }
-    // .img-position-2{
-    //   top: -3000%;
-    // }
-    // .img-position-3{
-    //   top: -260px;
-    // }
-    // .img-position-4{
-    //   top: -240px;
-    //   width: 93%;
-    // }
-    // .img-position-5{
-    //   top: -260px;
-    // }
-    // .img-position-6{
-    //   top: -240px;
-    // }
-    // .img-position-7{
-    //   top: -240px;
-    // }
-    // .img-position-8{
-    //   top: -250px;
-    // }
-    // .img-position-9{
-    //   top: -250px;
-    // }
+
     .slider__content_title {
       font-style: normal;
       font-weight: 500;
@@ -144,7 +108,6 @@
     .slider__control {
       background-color: unset;
       background: #FFFFFF;
-      // outline: 2px solid red;
       border-radius: 3px;
     }
     .slider__control:hover,
@@ -270,7 +233,6 @@
 }
 .slick-dotted.slick-slider{
   height: 121%;
-    // padding-top: 100px;
   @media only screen and (max-width: 540px) {
   margin: 0px -7% 30px;
   }
@@ -290,11 +252,11 @@
 .slick-dots li.slick-active button:before {
   color: #FF2F00;
   opacity: 1;
-    // background-color:red;
 }
 .slick-slider .slick-track, .slick-slider .slick-list{
   @media only screen and (max-width: 600px) {
   margin: 0px -15px 0px 0px;
   }
 
+}
 }

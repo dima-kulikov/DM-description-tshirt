@@ -1,3 +1,5 @@
+.video-bonus{
+
 .dl-active {
   background-color: #f3f3f3;
   font-weight: 500;
@@ -59,21 +61,10 @@
   background-color: transparent;
   border: 0;
 }  
-// .dl-section__open-btn::before {
-//   content: "";
-//   position: absolute;
-//   background-color: #333;
-//   cursor: pointer;
-//   left: 0;
-//   top: 9px;
-//   height: 2px;
-//   width: 20px;
-// }
   
 .dl-section__open-btn::after {
   content: "";
   position: absolute;
-  // background-color: #333;
   cursor: pointer;
   width: 2px;
   height: 10px;
@@ -85,7 +76,6 @@
 .dl-section__open-btn__del-after::after {
   content: "";
   position: absolute;
-  // background-color: #333;
   cursor: pointer;
   width: 2px;
   height: 10px;
@@ -114,7 +104,6 @@
 .dl-info-tabs-item__title-name {
   font-size: 20px;
   font-weight: 500;
-  // text-transform: uppercase;
   margin: 0px 25px 0px 15px;
   letter-spacing: .04em;
   line-height: 30px;
@@ -191,7 +180,6 @@
   margin: 60px 0px 90px;
   cursor: pointer;
   @media only screen and (max-width: 1024px) {
-  // margin-left: 15px;
   margin: 35px 0px 65px 15px;
 }
 }
@@ -270,5 +258,7 @@
   .dl-open .dl-info-tabs-item {
     padding: 5px 15px 30px;
   } 
+}
+
 }
 
