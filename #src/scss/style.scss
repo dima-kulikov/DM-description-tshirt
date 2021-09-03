@@ -22,9 +22,10 @@
 }
 
 .section-size{
-  max-width: 1440px;
+  max-width: 1470px;
   margin: 0px auto;
-  outline: 1px solid red;
+  // outline: 1px solid red;
+  padding: 0px 15px;
 }
 .block-point{
   position: relative;
@@ -121,4 +122,169 @@
 .third-desc-coordinat{
   top: 82.4%;
   right: 29%;
+}
+
+//-- ОПИСАНИЕ 2 БЛОКА
+.two-blocks{
+  margin: 100px 0px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  @media   (max-width: 1024px){
+    align-items: center;
+    flex-direction: column;
+    
+  }
+}
+.two-blocks-text{
+  max-width: 500px;
+}
+.two-blocks-text:last-child{
+  @media   (max-width: 1024px){
+    margin-top: 50px;
+  }
+}
+.two-blocks-text-title{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #333333;
+}
+.two-blocks-text-desc{
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-top: 20px;
+  font-weight: 400;
+}
+//-- КРУГЛЫЕ ФОТО БЛОК --
+.round-photo{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.round-photo__item{
+  max-width: 200px;
+  text-align: center;
+  margin: 50px 0px 0px;
+  @media   (max-width: 1024px){
+    margin: 50px 70px 0px;
+  }
+  @media   (max-width: 768px){
+    margin: 50px 40px 0px;
+  }
+  @media   (max-width: 428px){
+    margin: 50px 0px 0px;
+  }
+}
+.round-photo__item img{
+  margin-bottom: 8px;
+}
+.round-photo__item__title{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+//-- БЛОК ТАБЛИЦА С РАЗМЕРАМИ
+.table{
+  max-width: 685px;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 100px;
+  
+}
+.table__title{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #333333;
+}
+.table__text{
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  padding: 0px 15px;
+}
+.table table{
+  width: 100%;
+  margin-top: 40px;
+}
+.table table td{
+  padding: 20px;
+}
+.table table th{
+  display: none;
+  // background-color: red;
+  @media   (max-width: 500px){
+    display: revert;
+    background-color: #F8F8F8;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    }
+}
+.table table td:first-child{
+  // width: 57%;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  @media   (max-width: 500px){
+  display: none;
+  }
+}
+.table table td:not(:first-child){
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+  padding: 20px 10px;
+  width: 100px;
+}
+.color-bg{
+  background-color: #F8F8F8;
+  @media   (max-width: 500px){
+    background-color: #FFFF;
+  }
+}
+// РАБОТА С ПОСЛЕДНИМ ФОТО
+.size-selection{
+  position: relative;
+  margin-top: 140px;
+  max-width: 849px;
+  margin: 140px auto 0px;
+}
+.size-selection img{
+  width: 100%;
+}
+.size-selection::after{
+  content: 'Обхват груди';
+  position: absolute;
+  top: 48%;
+  left: -9%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;  
+  @media   (max-width: 1020px){
+    top: auto;
+    right: 69%;
+    left: auto;
+    bottom: 102%;
+  }
+}
+.size-selection::before{
+  content: 'Длина изделия';
+  position: absolute;
+  top: 3%;
+  left: 63%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
