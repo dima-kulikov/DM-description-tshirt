@@ -514,7 +514,9 @@ body {
 .circle:hover + .description,
 .circle:hover ~ .square,
 .circle:focus + .description,
-.circle:focus ~ .square {
+.circle:focus ~ .square,
+.circle:active + .description,
+.circle:active ~ .square {
   display: block;
 }
 
