@@ -509,7 +509,8 @@ body {
   background: #FF2F00;
 }
 
-.circle:hover + .description {
+.circle:hover + .description,
+.circle:hover ~ .square {
   display: block;
 }
 

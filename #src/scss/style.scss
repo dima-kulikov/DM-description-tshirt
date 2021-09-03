@@ -67,7 +67,8 @@
     border: 7.5px solid  #FFFFFF;
   }
 }
-.circle:hover + .description {
+.circle:hover + .description,
+.circle:hover ~ .square {
   display: block;
 }
 .circle:hover{
