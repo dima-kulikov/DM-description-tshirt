@@ -512,7 +512,9 @@ body {
 }
 
 .circle:hover + .description,
-.circle:hover ~ .square {
+.circle:hover ~ .square,
+.circle:focus + .description,
+.circle:focus ~ .square {
   display: block;
 }
 
@@ -749,11 +751,32 @@ body {
     left: auto;
     bottom: 102%;
   }
+
+  .size-selection::before {
+    top: auto;
+    right: auto;
+    left: 63%;
+    bottom: 101%;
+  }
 }
 
 @media (max-width: 768px) {
   .round-photo__item {
     margin: 50px 40px 0px;
+  }
+}
+
+@media (max-width: 540px) {
+  .size-selection::after {
+    right: 63%;
+    bottom: 102%;
+  }
+
+  .size-selection::before {
+    top: auto;
+    right: auto;
+    left: 56%;
+    bottom: 102%;
   }
 }
 

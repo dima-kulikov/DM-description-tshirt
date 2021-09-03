@@ -69,7 +69,9 @@
   }
 }
 .circle:hover + .description,
-.circle:hover ~ .square {
+.circle:hover ~ .square,
+.circle:focus + .description,
+.circle:focus ~ .square {
   display: block;
 }
 .circle:hover{
@@ -278,6 +280,10 @@
     left: auto;
     bottom: 102%;
   }
+  @media   (max-width: 540px){
+    right: 63%;
+    bottom: 102%;
+  }
 }
 .size-selection::before{
   content: 'Длина изделия';
@@ -287,4 +293,16 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  @media   (max-width: 1020px){
+    top: auto;
+    right: auto;
+    left: 63%;
+    bottom: 101%;
+  }
+  @media   (max-width: 540px){
+    top: auto;
+    right: auto;
+    left: 56%;
+    bottom: 102%;
+  }
 }
