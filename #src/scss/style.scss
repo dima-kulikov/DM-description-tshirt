@@ -68,12 +68,16 @@
     border: 7.5px solid  #FFFFFF;
   }
 }
-.circle:hover + .description,
-.circle:hover ~ .square,
-.circle:focus + .description,
-.circle:focus ~ .square,
-.circle:active + .description,
-.circle:active ~ .square {
+// .circle:hover + .description,
+// .circle:hover ~ .square,
+// .circle:focus + .description,
+// .circle:focus ~ .square,
+// .circle:active + .description,
+// .circle:active ~ .square {
+//   display: block;
+// }
+.circle-open + .description,
+.circle-open ~ .square{
   display: block;
 }
 .circle:hover{

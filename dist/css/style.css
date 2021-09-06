@@ -511,12 +511,8 @@ body {
   background: #FF2F00;
 }
 
-.circle:hover + .description,
-.circle:hover ~ .square,
-.circle:focus + .description,
-.circle:focus ~ .square,
-.circle:active + .description,
-.circle:active ~ .square {
+.circle-open + .description,
+.circle-open ~ .square {
   display: block;
 }
 
