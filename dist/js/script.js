@@ -25,6 +25,8 @@ const open = document.querySelector('.circle-open')
 document.addEventListener('click', function(e) {
 	const items = document.querySelectorAll('.circle');
 	const { target } = e;
+
+  console.log(target);
   
   if (target.classList.contains('circle')) {
     target.classList.toggle('circle-open');
