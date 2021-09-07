@@ -46,4 +46,3 @@ const pp = () =>{
 };
 
 blockPoint.addEventListener('mouseleave', pp);
-// document.getElementById("client").reset();

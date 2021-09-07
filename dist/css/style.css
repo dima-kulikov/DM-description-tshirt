@@ -551,8 +551,8 @@ body {
 }
 
 .first-coordinat-circle {
-  left: 37.5%;
-  top: 5%;
+  left: 34.5%;
+  top: 3%;
 }
 
 .first-square {
@@ -566,23 +566,23 @@ body {
 }
 
 .second-coordinat-circle {
-  left: 2%;
-  top: 29%;
+  left: -1%;
+  top: 27%;
 }
 
 .second-square {
-  left: 9.7%;
+  left: 10.7%;
   top: 30%;
 }
 
 .second-desc-coordinat {
   top: 26%;
-  left: 11%;
+  left: 12%;
 }
 
 .third-coordinat-circle {
-  right: 30%;
-  bottom: 20%;
+  right: 27.3%;
+  bottom: 18%;
 }
 
 .third-square {
@@ -592,7 +592,7 @@ body {
 
 .third-desc-coordinat {
   top: 82.4%;
-  right: 29%;
+  left: 14%;
 }
 
 .two-blocks {
@@ -776,9 +776,19 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .size-selection {
+    padding: 0px 15px;
+  }
+}
+
 @media (max-width: 768px) {
   .round-photo__item {
     margin: 50px 40px 0px;
+  }
+
+  .table {
+    padding: 0px 15px;
   }
 }
 
@@ -823,8 +833,51 @@ body {
   }
 }
 
+@media (max-width: 460px) {
+  .first-coordinat-circle {
+    left: 33.5%;
+    top: 2%;
+  }
+
+  .first-square {
+    left: 40%;
+    top: 12.9%;
+  }
+
+  .first-desc-coordinat {
+    left: 6%;
+    top: 14%;
+  }
+}
+
 @media (max-width: 428px) {
   .round-photo__item {
     margin: 50px 0px 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .second-square {
+    left: 14%;
+    top: 32%;
+  }
+
+  .second-desc-coordinat {
+    top: 26%;
+    left: 16%;
+  }
+
+  .third-coordinat-circle {
+    bottom: 15%;
+  }
+
+  .third-square {
+    right: 33.5%;
+    top: 83.4%;
+  }
+
+  .third-desc-coordinat {
+    top: 84.4%;
+    left: 4%;
   }
 }

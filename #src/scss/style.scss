@@ -110,42 +110,73 @@
 }
 // ----РАБОТА С КООРДИНАТАМИ, КРУГ, КВАДРАТ, ОПИСАНИЕ
 .first-coordinat-circle{
-  left: 37.5%;
-  top: 5%;
+  left: 34.5%;
+  top: 3%;
+  @media   (max-width: 460px){
+    left: 33.5%;
+    top: 2%; 
+  }
 }
 .first-square{
   left: 39%;
   top: 11%;
+  @media   (max-width: 460px){
+    left: 40%;
+    top: 12.9%; 
+  }
 }
 .first-desc-coordinat{
   top: 12%;
   left: 12%;
+  @media   (max-width: 460px){
+    left: 6%;
+    top: 14%; 
+  }
 }
 // --2
 .second-coordinat-circle{
-  left: 2%;
-  top: 29%;
+  left: -1%;
+  top: 27%;
 }
 .second-square{
-  left: 9.7%;
+  left: 10.7%;
   top: 30%;
+  @media   (max-width: 420px){
+    left: 14%;
+    top: 32%; 
+  }
 }
 .second-desc-coordinat{
   top: 26%;
-  left: 11%;
+  left: 12%;
+  @media   (max-width: 420px){
+    top: 26%;
+    left: 16%;
+  }
 }
 // --3
 .third-coordinat-circle{
-  right: 30%;
-  bottom: 20%;
+  right: 27.3%;
+  bottom: 18%;
+  @media   (max-width: 420px){
+    bottom: 15%;
+  }
 }
 .third-square{
   right: 31.5%;
   top: 81.4%;
+  @media   (max-width: 420px){
+    right: 33.5%;
+    top: 83.4%;
+  }
 }
 .third-desc-coordinat{
   top: 82.4%;
-  right: 29%;
+  left: 14%;
+  @media   (max-width: 420px){
+    top: 84.4%;
+    left: 4%;
+  }
 }
 
 //-- ОПИСАНИЕ 2 БЛОКА
@@ -217,7 +248,9 @@
   margin: 0px auto;
   text-align: center;
   margin-top: 100px;
-  
+  @media   (max-width: 768px){
+    padding: 0px 15px;
+  }
 }
 .table__title{
   font-weight: 500;
@@ -284,6 +317,9 @@
   margin-top: 140px;
   max-width: 849px;
   margin: 140px auto 0px;
+  @media   (max-width: 900px){
+    padding: 0px 15px;
+  }
 }
 .size-selection img{
   width: 100%;
