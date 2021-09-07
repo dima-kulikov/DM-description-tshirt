@@ -488,6 +488,8 @@ body {
   padding: 20px;
   -webkit-animation: 1.5s infinite;
           animation: 1.5s infinite;
+  -webkit-box-shadow: 0px 2px 10px rgba(144, 144, 144, 0.25);
+          box-shadow: 0px 2px 10px rgba(144, 144, 144, 0.25);
 }
 
 .description p {
@@ -516,7 +518,7 @@ body {
   display: block;
 }
 
-.circle:hover {
+.circle-open {
   background: #333333;
 }
 

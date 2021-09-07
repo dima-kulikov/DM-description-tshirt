@@ -45,6 +45,7 @@
   background: #FFFFFF;
   padding: 20px;
   animation: 1.5s infinite;
+  box-shadow: 0px 2px 10px rgba(144, 144, 144, 0.25); 
   }
 .description p{
   font-size: 14px;
@@ -52,7 +53,7 @@
   align-items: center;
   color: #333333;
   font-weight: 500;
-  margin: 0px; 
+  margin: 0px;
 }  
 .circle{
   position: absolute;
@@ -80,7 +81,7 @@
 .circle-open ~ .square{
   display: block;
 }
-.circle:hover{
+.circle-open {
   background: #333333;
 }
 .square{
@@ -90,6 +91,7 @@
   height: 15px;
   background: #FFFFFF;
   border-radius: 3px;
+  // box-shadow: 0px 2px 10px rgba(144, 144, 144, 0.25); 
   transform: matrix(0.71, 0.71, 0.7, -0.71, 0, 0);
 }
 // ----РАБОТА С КООРДИНАТАМИ, КРУГ, КВАДРАТ, ОПИСАНИЕ

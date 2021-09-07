@@ -33,33 +33,8 @@ document.addEventListener('click', function(e) {
       item.classList.remove('circle-open')
     });
   }
-  
-  // target.classList.add('circle-open');
 });
 
-
-
-// function openDescription () {
-//     console.log(this);
-//     this.classList.add('circle-open');
-
-
-// //   document.onclick = function(e){
-// //    if ( this.classList != 'circle-open' ) {
-// //       container.style.display = 'none';
-// //       }     
-// };
-
-
-// };
-
-circleEvent.forEach(el => {
-    el.addEventListener('click', openDescription);
-})
-    
-//----
-
-// const material = document.querySelector('.section-size')
 
 
 
