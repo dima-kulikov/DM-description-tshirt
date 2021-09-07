@@ -504,13 +504,29 @@ body {
 }
 
 .circle {
+  z-index: 1000;
   position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.circle::before {
+  display: block;
+  content: '';
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 9px solid  #FFFFFF;
   cursor: pointer;
   background: #FF2F00;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .circle-open + .description,
@@ -518,7 +534,7 @@ body {
   display: block;
 }
 
-.circle-open {
+.circle-open::before {
   background: #333333;
 }
 
@@ -781,7 +797,7 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  .circle {
+  .circle::before {
     width: 25px;
     height: 25px;
     border: 7.5px solid  #FFFFFF;
