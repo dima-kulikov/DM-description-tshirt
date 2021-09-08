@@ -21,6 +21,7 @@
   box-sizing: border-box;
 }
 
+.tshirt-desc{
 .section-size{
   max-width: 1470px;
   margin: 0px auto;
@@ -40,7 +41,8 @@
   display: none;
   // display: block;
   position: absolute;
-  width: 290px;
+  max-width: 290px;
+  width: auto;
   border-radius: 3px;
   background: #FFFFFF;
   padding: 20px;
@@ -127,7 +129,7 @@
 }
 .first-desc-coordinat{
   top: 12%;
-  left: 12%;
+  left: 16%;
   @media   (max-width: 460px){
     left: 6%;
     top: 14%; 
@@ -164,7 +166,7 @@
 }
 .third-square{
   right: 31.5%;
-  top: 81.4%;
+  top: 81.5%;
   @media   (max-width: 420px){
     right: 33.5%;
     top: 83.4%;
@@ -172,10 +174,10 @@
 }
 .third-desc-coordinat{
   top: 82.4%;
-  left: 14%;
+  left: 31%;
   @media   (max-width: 420px){
     top: 84.4%;
-    left: 4%;
+    left: 14%;
   }
 }
 
@@ -363,4 +365,5 @@
     left: 56%;
     bottom: 102%;
   }
+}
 }

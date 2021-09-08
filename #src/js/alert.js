@@ -11,7 +11,6 @@ const isTouch = () => {
 const handler = (e) => {
   const items = document.querySelectorAll('.circle');
 	const { target, type } = e;
- 
   if (target.classList.contains('circle')) {
     items.forEach(item => {
       if (!item.isEqualNode(target)) item.classList.remove('circle-open')
@@ -29,20 +28,16 @@ const handler = (e) => {
     });
   }
 }
-
 if (isTouch()) {
   document.addEventListener('click', handler);
 } else {
-  circleEvent.forEach(item => {
-    item.addEventListener('mouseenter', handler);
-    item.addEventListener('mouseleave', handler);
-  })
+  blockPoint.addEventListener('mousemove', handler);
 }
+
+
 
 const pp = () =>{
   circleEvent[0].classList.add('circle-open');
-  // alert('374723')
-  // blockPoint.preventDefault();
 };
 
 blockPoint.addEventListener('mouseleave', pp);

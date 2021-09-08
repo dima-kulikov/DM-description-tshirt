@@ -463,26 +463,27 @@ body {
           box-sizing: border-box;
 }
 
-.section-size {
+.tshirt-desc .section-size {
   max-width: 1470px;
   margin: 0px auto;
   padding: 0px 15px;
 }
 
-.block-point {
+.tshirt-desc .block-point {
   position: relative;
   max-width: 513px;
   margin: 0px auto;
 }
 
-.tshirt-img {
+.tshirt-desc .tshirt-img {
   width: 100%;
 }
 
-.description {
+.tshirt-desc .description {
   display: none;
   position: absolute;
-  width: 290px;
+  max-width: 290px;
+  width: auto;
   border-radius: 3px;
   background: #FFFFFF;
   padding: 20px;
@@ -492,7 +493,7 @@ body {
           box-shadow: 0px 2px 10px rgba(144, 144, 144, 0.25);
 }
 
-.description p {
+.tshirt-desc .description p {
   font-size: 14px;
   line-height: 18px;
   -webkit-box-align: center;
@@ -503,14 +504,14 @@ body {
   margin: 0px;
 }
 
-.circle {
+.tshirt-desc .circle {
   z-index: 1000;
   position: absolute;
   width: 60px;
   height: 60px;
 }
 
-.circle::before {
+.tshirt-desc .circle::before {
   display: block;
   content: '';
   width: 30px;
@@ -529,16 +530,16 @@ body {
           transform: translate(-50%, -50%);
 }
 
-.circle-open + .description,
-.circle-open ~ .square {
+.tshirt-desc .circle-open + .description,
+.tshirt-desc .circle-open ~ .square {
   display: block;
 }
 
-.circle-open::before {
+.tshirt-desc .circle-open::before {
   background: #333333;
 }
 
-.square {
+.tshirt-desc .square {
   display: none;
   position: absolute;
   width: 15px;
@@ -550,52 +551,52 @@ body {
           transform: matrix(0.71, 0.71, 0.7, -0.71, 0, 0);
 }
 
-.first-coordinat-circle {
+.tshirt-desc .first-coordinat-circle {
   left: 34.5%;
   top: 3%;
 }
 
-.first-square {
+.tshirt-desc .first-square {
   left: 39%;
   top: 11%;
 }
 
-.first-desc-coordinat {
+.tshirt-desc .first-desc-coordinat {
   top: 12%;
-  left: 12%;
+  left: 16%;
 }
 
-.second-coordinat-circle {
+.tshirt-desc .second-coordinat-circle {
   left: -1%;
   top: 27%;
 }
 
-.second-square {
+.tshirt-desc .second-square {
   left: 10.7%;
   top: 30%;
 }
 
-.second-desc-coordinat {
+.tshirt-desc .second-desc-coordinat {
   top: 26%;
   left: 12%;
 }
 
-.third-coordinat-circle {
+.tshirt-desc .third-coordinat-circle {
   right: 27.3%;
   bottom: 18%;
 }
 
-.third-square {
+.tshirt-desc .third-square {
   right: 31.5%;
-  top: 81.4%;
+  top: 81.5%;
 }
 
-.third-desc-coordinat {
+.tshirt-desc .third-desc-coordinat {
   top: 82.4%;
-  left: 14%;
+  left: 31%;
 }
 
-.two-blocks {
+.tshirt-desc .two-blocks {
   margin: 100px 0px 0px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -604,18 +605,18 @@ body {
       justify-content: space-around;
 }
 
-.two-blocks-text {
+.tshirt-desc .two-blocks-text {
   max-width: 500px;
 }
 
-.two-blocks-text-title {
+.tshirt-desc .two-blocks-text-title {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
   color: #333333;
 }
 
-.two-blocks-text-desc {
+.tshirt-desc .two-blocks-text-desc {
   font-size: 16px;
   line-height: 24px;
   color: #333333;
@@ -623,7 +624,7 @@ body {
   font-weight: 400;
 }
 
-.round-photo {
+.tshirt-desc .round-photo {
   margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,38 +635,38 @@ body {
       flex-wrap: wrap;
 }
 
-.round-photo__item {
+.tshirt-desc .round-photo__item {
   max-width: 200px;
   text-align: center;
   margin: 50px 0px 0px;
 }
 
-.round-photo__item img {
+.tshirt-desc .round-photo__item img {
   margin-bottom: 8px;
 }
 
-.round-photo__item__title {
+.tshirt-desc .round-photo__item__title {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: #333333;
 }
 
-.table {
+.tshirt-desc .table {
   max-width: 685px;
   margin: 0px auto;
   text-align: center;
   margin-top: 100px;
 }
 
-.table__title {
+.tshirt-desc .table__title {
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
   color: #333333;
 }
 
-.table__text {
+.tshirt-desc .table__text {
   margin-top: 20px;
   font-weight: 400;
   font-size: 16px;
@@ -675,20 +676,20 @@ body {
   padding: 0px 15px;
 }
 
-.table table {
+.tshirt-desc .table table {
   width: 100%;
   margin-top: 40px;
 }
 
-.table table td {
+.tshirt-desc .table table td {
   padding: 20px;
 }
 
-.table table th {
+.tshirt-desc .table table th {
   display: none;
 }
 
-.table table td:first-child {
+.tshirt-desc .table table td:first-child {
   text-align: left;
   font-weight: 500;
   font-size: 16px;
@@ -696,7 +697,7 @@ body {
   color: #333333;
 }
 
-.table table td:not(:first-child) {
+.tshirt-desc .table table td:not(:first-child) {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -705,22 +706,22 @@ body {
   width: 100px;
 }
 
-.color-bg {
+.tshirt-desc .color-bg {
   background-color: #F8F8F8;
 }
 
-.size-selection {
+.tshirt-desc .size-selection {
   position: relative;
   margin-top: 140px;
   max-width: 849px;
   margin: 140px auto 0px;
 }
 
-.size-selection img {
+.tshirt-desc .size-selection img {
   width: 100%;
 }
 
-.size-selection::after {
+.tshirt-desc .size-selection::after {
   content: 'Обхват груди';
   position: absolute;
   top: 48%;
@@ -730,7 +731,7 @@ body {
   line-height: 20px;
 }
 
-.size-selection::before {
+.tshirt-desc .size-selection::before {
   content: 'Длина изделия';
   position: absolute;
   top: 3%;
@@ -741,7 +742,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .two-blocks {
+  .tshirt-desc .two-blocks {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -751,24 +752,24 @@ body {
             flex-direction: column;
   }
 
-  .two-blocks-text:last-child {
+  .tshirt-desc .two-blocks-text:last-child {
     margin-top: 50px;
   }
 
-  .round-photo__item {
+  .tshirt-desc .round-photo__item {
     margin: 50px 70px 0px;
   }
 }
 
 @media (max-width: 1020px) {
-  .size-selection::after {
+  .tshirt-desc .size-selection::after {
     top: auto;
     right: 69%;
     left: auto;
     bottom: 102%;
   }
 
-  .size-selection::before {
+  .tshirt-desc .size-selection::before {
     top: auto;
     right: auto;
     left: 63%;
@@ -777,28 +778,28 @@ body {
 }
 
 @media (max-width: 900px) {
-  .size-selection {
+  .tshirt-desc .size-selection {
     padding: 0px 15px;
   }
 }
 
 @media (max-width: 768px) {
-  .round-photo__item {
+  .tshirt-desc .round-photo__item {
     margin: 50px 40px 0px;
   }
 
-  .table {
+  .tshirt-desc .table {
     padding: 0px 15px;
   }
 }
 
 @media (max-width: 540px) {
-  .size-selection::after {
+  .tshirt-desc .size-selection::after {
     right: 63%;
     bottom: 102%;
   }
 
-  .size-selection::before {
+  .tshirt-desc .size-selection::before {
     top: auto;
     right: auto;
     left: 56%;
@@ -807,7 +808,7 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  .circle::before {
+  .tshirt-desc .circle::before {
     width: 25px;
     height: 25px;
     border: 7.5px solid  #FFFFFF;
@@ -815,7 +816,7 @@ body {
 }
 
 @media (max-width: 500px) {
-  .table table th {
+  .tshirt-desc .table table th {
     display: revert;
     background-color: #F8F8F8;
     padding: 20px;
@@ -824,60 +825,60 @@ body {
     line-height: 20px;
   }
 
-  .table table td:first-child {
+  .tshirt-desc .table table td:first-child {
     display: none;
   }
 
-  .color-bg {
+  .tshirt-desc .color-bg {
     background-color: #FFFF;
   }
 }
 
 @media (max-width: 460px) {
-  .first-coordinat-circle {
+  .tshirt-desc .first-coordinat-circle {
     left: 33.5%;
     top: 2%;
   }
 
-  .first-square {
+  .tshirt-desc .first-square {
     left: 40%;
     top: 12.9%;
   }
 
-  .first-desc-coordinat {
+  .tshirt-desc .first-desc-coordinat {
     left: 6%;
     top: 14%;
   }
 }
 
 @media (max-width: 428px) {
-  .round-photo__item {
+  .tshirt-desc .round-photo__item {
     margin: 50px 0px 0px;
   }
 }
 
 @media (max-width: 420px) {
-  .second-square {
+  .tshirt-desc .second-square {
     left: 14%;
     top: 32%;
   }
 
-  .second-desc-coordinat {
+  .tshirt-desc .second-desc-coordinat {
     top: 26%;
     left: 16%;
   }
 
-  .third-coordinat-circle {
+  .tshirt-desc .third-coordinat-circle {
     bottom: 15%;
   }
 
-  .third-square {
+  .tshirt-desc .third-square {
     right: 33.5%;
     top: 83.4%;
   }
 
-  .third-desc-coordinat {
+  .tshirt-desc .third-desc-coordinat {
     top: 84.4%;
-    left: 4%;
+    left: 14%;
   }
 }
