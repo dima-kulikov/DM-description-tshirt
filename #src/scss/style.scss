@@ -22,6 +22,8 @@
 }
 
 .tshirt-desc{
+  margin-top: 50px;
+
 .section-size{
   max-width: 1470px;
   margin: 0px auto;
@@ -62,6 +64,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
+  z-index: auto;
 }
 
 .circle::before {
@@ -341,7 +344,7 @@
     bottom: 102%;
   }
   @media   (max-width: 540px){
-    right: 63%;
+    right: 60%;
     bottom: 102%;
   }
 }
@@ -362,7 +365,7 @@
   @media   (max-width: 540px){
     top: auto;
     right: auto;
-    left: 56%;
+    left: 54%;
     bottom: 102%;
   }
 }
